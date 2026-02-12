@@ -1,0 +1,89 @@
+# GitHub Repository Description
+
+## Short Description (for GitHub repo settings)
+
+**Process Hiding Rootkit - Educational Kernel Module**
+
+A Linux kernel module demonstrating advanced syscall hooking using ftrace to hide processes from system utilities. Educational project for learning kernel-level process manipulation and security concepts.
+
+---
+
+## Long Description (for About section)
+
+### Process Hiding Rootkit
+
+An educational Linux kernel module project that demonstrates:
+
+- **Ftrace-based syscall hooking** to intercept system calls
+- **Process hiding** from `ps`, `top`, and `/proc` enumeration
+- **PCB (Process Control Block) manipulation** for scheduling control
+- **Kernel module development** with modern kernel compatibility (5.7+)
+- **Systemd service integration** for deployment scenarios
+
+### Components
+
+1. **Kernel Module** (`hide_process.c`) - Intercepts getdents/getdents64 syscalls
+2. **User Program** (`programme.c`) - Manages process creation and priorities
+3. **Deploy Script** (`bash.sh`) - Automated installation with dependency management
+
+### Key Features
+
+✅ Signal 64-based activation mechanism  
+✅ X86-64 ftrace hooking implementation  
+✅ Kernel 5.7+ compatibility with dynamic symbol resolution  
+✅ Automated multi-distro dependency installation  
+✅ PCB monitoring and display  
+✅ Systemd service persistence  
+
+### Educational Value
+
+Learn about:
+- Linux kernel module programming
+- Ftrace function hooking
+- Process management internals
+- Privilege levels and CPU protection
+- System call interception techniques
+
+### ⚠️ Disclaimer
+
+**Educational and research purposes only.** Unauthorized system access is illegal. Use only on systems you own or have explicit permission to test.
+
+---
+
+## Topics/Tags (for GitHub)
+
+```
+kernel-module
+rootkit
+ftrace
+syscall-hooking
+linux-security
+kernel-security
+educational
+process-hiding
+system-programming
+pentesting
+```
+
+---
+
+## Repository Metadata
+
+**Language**: C, Shell  
+**License**: Educational Use Only  
+**Audience**: Security Researchers, Kernel Developers, Students  
+**Skill Level**: Advanced (requires Linux kernel knowledge)  
+
+---
+
+## Getting Started
+
+```bash
+git clone <repository>
+cd rootkit
+sudo ./bash.sh          # Interactive menu
+# or
+sudo ./bash.sh --test   # Quick test
+```
+
+See [README.md](README.md) for detailed documentation.

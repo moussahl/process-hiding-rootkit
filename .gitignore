@@ -1,0 +1,65 @@
+# Build artifacts
+*.ko
+*.ko.cmd
+*.o
+*.o.d
+*.elf
+*.mod
+*.mod.c
+*.mod.o
+*.dwo
+*.dsym
+
+# Compiled programs
+programme
+hide_process
+
+# Build directories
+.tmp_versions/
+modules.order
+Module.symvers
+Module.markers
+build/
+dist/
+.vscode
+
+# Logs and temp files
+*.log
+/tmp/c_test_output.log
+/tmp/processus_resident.log
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.#*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.sublime-workspace
+
+# Makefile (auto-generated)
+Makefile
+
+# Documentation
+*.pdf
+*.docx
+
+# Kernel build
+linux/
+.module-begin
+.install
+.git/
+
+# Dependencies
+*.a
+*.so
+*.dylib
+
+# Debug symbols
+.debug/
+*.debug
